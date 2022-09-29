@@ -13,7 +13,7 @@ export const Layout: React.FC<LayoutProps> = memo((props) => {
   const { children, className } = props;
 
   return (
-    <div className={cx('main-wrapper', className)}>
+    <div className={cx('main-wrapper min-h-screen', className)}>
       <Navbar />
       {children}
       <Footer />

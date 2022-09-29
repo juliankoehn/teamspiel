@@ -5,7 +5,7 @@ import { FiGithub } from 'react-icons/fi';
 
 export const Footer: React.FC = memo(() => {
   return (
-    <footer className="bg-accents-100 pt-16 text-sm text-accents-500 border-t border-accents-200">
+    <footer className="bg-accents-100 pt-16 text-sm text-accents-500 border-t border-accents-200 sticky top-[100vh]">
       <div className="mx-auto max-w-7xl pt-4 pb-5 px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-6">
           <span>
