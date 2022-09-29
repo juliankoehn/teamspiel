@@ -33,6 +33,12 @@
   @apply focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500;
 }
 
+.btn-invert {
+  @apply bg-accents-100 text-white border border-accents-200;
+  @apply hover:bg-white hover:text-black hover:border-black;
+  @apply focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500;
+}
+
 @tailwind utilities;
 
 body {

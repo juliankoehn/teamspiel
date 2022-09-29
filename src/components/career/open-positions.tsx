@@ -73,7 +73,7 @@ export const OpenPositions: React.FC = () => {
                 </div>
                 <a
                   href={job.link}
-                  className="block mt-4 text-primary font-bold text-sm"
+                  className="btn btn-invert mt-4 font-bold text-sm"
                 >
                   Apply Now
                 </a>
