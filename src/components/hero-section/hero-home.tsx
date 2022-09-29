@@ -5,7 +5,7 @@ export interface HeroHomeProps {}
 
 export const HeroHome: React.FC<HeroHomeProps> = (props) => {
   return (
-    <section className="bg-black pt-24 md:pt-48 pb-32">
+    <section className=" pt-24 md:pt-48 pb-32">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex-wrap flex items-center overflow-hidden">
           <div className="w-full md:w-5/6 lg:w-1/2">
