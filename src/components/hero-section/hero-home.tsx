@@ -5,12 +5,12 @@ export interface HeroHomeProps {}
 
 export const HeroHome: React.FC<HeroHomeProps> = (props) => {
   return (
-    <section className=" pt-24 md:pt-48 pb-32">
+    <section className="py-14 md:py-36">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex-wrap flex items-center overflow-hidden">
-          <div className="w-full md:w-5/6 lg:w-1/2">
-            <div className="mt-12 lg:mt-0">
-              <h1 className="font-bold text-3xl md:text-5xl text-white mb-4">
+          <div className="w-full md:w-1/2 lg:w-1/2 order-2 md:order-1">
+            <div className=" lg:mt-0">
+              <h1 className="font-bold text-5xl text-white mb-4">
                 Software development so collaborative, it&apos;s virtually built
                 in-house.
               </h1>
@@ -26,7 +26,7 @@ export const HeroHome: React.FC<HeroHomeProps> = (props) => {
               </p>
             </div>
           </div>
-          <div className="w-full md:w-1/6 lg:w-1/2">
+          <div className="w-full md:w-1/2 order-1 md:order-2">
             <div className="relative">
               <Image
                 src="/images/cyber_banner_image.svg"

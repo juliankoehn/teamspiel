@@ -55,7 +55,7 @@ export const PageHeader: React.FC<PageHeaderProps> = memo((props) => {
         </section>
       ) : (
         <section
-          className="relative overflow-hidden py-36"
+          className="relative overflow-hidden py-14 md:py-36"
           style={{
             background:
               "url('/images/page-header-bg.svg')no-repeat bottom left",

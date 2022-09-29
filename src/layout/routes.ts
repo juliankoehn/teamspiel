@@ -8,6 +8,10 @@ export const routes = [
     label: 'Services',
   },
   {
+    href: '/career',
+    label: 'Career',
+  },
+  {
     href: '/contact',
     label: 'Contact',
   },

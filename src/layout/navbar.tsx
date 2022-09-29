@@ -16,23 +16,6 @@ export const Navbar: React.FC<NavbarProps> = (props) => {
 
   const [isOpen, setOpen] = useState(false);
 
-  const [scroll, setScroll] = useState(0);
-  const [headerTop, setHeaderTop] = useState(0);
-
-  useEffect(() => {
-    const stickyheader: HTMLDivElement | null =
-      document.querySelector('.main-header');
-    setHeaderTop(stickyheader?.offsetTop ?? 0);
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-  const handleScroll = () => {
-    setScroll(window.scrollY);
-  };
-
   return (
     <>
       <Headroom disableInlineStyles>
@@ -48,7 +31,7 @@ export const Navbar: React.FC<NavbarProps> = (props) => {
                 <div className="hidden md:flex md:gap-x-6">
                   {routes.map((route) => (
                     <Link key={route.label} href={route.href}>
-                      <a className="inline-block rounded-lg py-1 px-2 text-base text-slate-200 hover:bg-slate-100 hover:text-slate-900 no-underline">
+                      <a className="inline-block p-2 text-sm text-accents-500 hover:text-white no-underline transition-colors">
                         {route.label}
                       </a>
                     </Link>
