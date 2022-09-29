@@ -38,7 +38,7 @@ const jobs = [
 
 export const OpenPositions: React.FC = () => {
   return (
-    <section className="bg-accents-100 text-white py-48">
+    <section className="bg-accents-100 text-white py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-12 gap-2 mb-20">
           <div className="col-span-12 md:col-span-4">
