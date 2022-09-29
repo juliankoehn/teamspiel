@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+
+.headroom {
+  @apply top-0 left-0 right-0 z-50 bg-black;
+
+  &--unfixed {
+    @apply relative translate-y-0;
+  }
+
+  &--scrolled {
+    @apply transform ease-in-out duration-200;
+  }
+
+  &--unpinned {
+    @apply fixed -translate-y-full;
+  }
+
+  &--pinned {
+    @apply fixed translate-y-0;
+  }
+}
+
+.btn {
+  @apply inline-flex items-center px-4 py-2 border border-transparent;
+  @apply shadow-sm text-base font-medium rounded-md;
+}
+
+.btn,
+.btn-primary {
+  @apply bg-white text-black;
+  @apply hover:bg-black hover:text-white hover:border-white;
+  @apply focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500;
+}
+
+@tailwind utilities;
+
+body {
+  @apply bg-black;
+}
