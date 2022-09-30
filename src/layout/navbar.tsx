@@ -5,6 +5,8 @@ import { HiMenu } from 'react-icons/hi';
 import { routes } from './routes';
 import { MobileNavigation } from './mobile-navbar';
 import Headroom from 'react-headroom';
+import { useRouter } from 'next/router';
+import { useCallback } from 'react';
 
 export interface NavbarProps {
   dark?: boolean;
@@ -14,7 +16,20 @@ export interface NavbarProps {
 export const Navbar: React.FC<NavbarProps> = (props) => {
   const { dark = true, className } = props;
 
+  const { pathname } = useRouter();
+
   const [isOpen, setOpen] = useState(false);
+
+  const getActiveClass = useCallback(
+    (path: string, absolute?: boolean) => {
+      if (absolute) {
+        return pathname === path ? 'text-white' : 'text-accents-500';
+      }
+
+      return pathname.startsWith(path) ? 'text-white' : 'text-accents-500';
+    },
+    [pathname]
+  );
 
   return (
     <>
@@ -31,7 +46,12 @@ export const Navbar: React.FC<NavbarProps> = (props) => {
                 <div className="hidden md:flex md:gap-x-6">
                   {routes.map((route) => (
                     <Link key={route.label} href={route.href}>
-                      <a className="inline-block p-2 text-sm text-accents-500 hover:text-white no-underline transition-colors">
+                      <a
+                        className={cx(
+                          'inline-block p-2 text-sm  hover:text-white no-underline transition-colors',
+                          getActiveClass(route.href, route.absolute)
+                        )}
+                      >
                         {route.label}
                       </a>
                     </Link>

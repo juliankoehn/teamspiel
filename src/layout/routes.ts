@@ -2,6 +2,7 @@ export const routes = [
   {
     href: '/',
     label: 'Home',
+    absolute: true,
   },
   {
     href: '/services',
