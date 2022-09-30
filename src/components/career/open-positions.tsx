@@ -1,3 +1,4 @@
+import { Job } from '@/types';
 import { __DEV__ } from '@/utils';
 import React from 'react';
 
@@ -36,7 +37,13 @@ const jobs = [
   },
 ];
 
-export const OpenPositions: React.FC = () => {
+export interface OpenPositionsProps {
+  jobs: Job[];
+}
+
+export const OpenPositions: React.FC<OpenPositionsProps> = (props) => {
+  const { jobs } = props;
+
   return (
     <section className="bg-accents-100 text-white py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

@@ -22,7 +22,11 @@ export const ContactForm: React.FC = memo(() => {
                 performant and scalable web application that users understand.
               </p>
             </div>
-            <form action="#" className="register-form">
+            <form
+              action="/api/forms/contact"
+              method="post"
+              className="register-form"
+            >
               <div className="grid grid-cols-1 gap-6">
                 <div className="grid grid-cols-2 gap-6">
                   <label className="block">
@@ -30,6 +34,7 @@ export const ContactForm: React.FC = memo(() => {
                     <input
                       type="text"
                       autoComplete="given-name"
+                      name="firstName"
                       className="
                             mt-1
                             block
@@ -48,6 +53,7 @@ export const ContactForm: React.FC = memo(() => {
                     <input
                       type="text"
                       autoComplete="family-name"
+                      name="lastName"
                       className="
                             mt-1
                             block
@@ -67,6 +73,7 @@ export const ContactForm: React.FC = memo(() => {
                   <input
                     type="text"
                     autoComplete="email"
+                    name="email"
                     className="
                     mt-1
                     block
@@ -85,6 +92,7 @@ export const ContactForm: React.FC = memo(() => {
                   <input
                     type="tel"
                     autoComplete="tel"
+                    name="phone"
                     className="
                     mt-1
                     block
@@ -99,26 +107,9 @@ export const ContactForm: React.FC = memo(() => {
                   />
                 </label>
                 <label className="block">
-                  <span className="text-slate-100">Email address</span>
-                  <input
-                    type="email"
-                    autoComplete="email"
-                    className="
-                    mt-1
-                    block
-                    w-full
-                    rounded-md
-                    border-gray-300
-                    shadow-sm
-                     text-slate-900
-                    focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50
-                  "
-                    placeholder="john@example.com"
-                  />
-                </label>
-                <label className="block">
                   <span className="text-gray-100">Additional details</span>
                   <textarea
+                    name="message"
                     className="
                     mt-1
                     block
@@ -133,7 +124,7 @@ export const ContactForm: React.FC = memo(() => {
                   />
                 </label>
                 <div>
-                  <button type="button" className="btn">
+                  <button type="submit" className="btn">
                     <HiMail className="-ml-1 mr-3 h-5 w-5" aria-hidden="true" />
                     Get in Touch
                   </button>
