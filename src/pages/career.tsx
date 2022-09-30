@@ -6,7 +6,7 @@ import React from 'react';
 
 export const Career: NextPage = () => {
   return (
-    <Layout>
+    <Layout title="Career">
       <PageHeader title="Join Us" description="Help us make the Web. Better." />
       <OpenPositions />
       <CareerPromo />

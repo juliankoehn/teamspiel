@@ -6,13 +6,12 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
 
-const Contact: NextPage = () => {
+const Services: NextPage = () => {
   return (
-    <Layout title="Contact Us">
-      <PageHeader title="More than just outsourcing: proactive &amp; reliable tech partnership" />
-      <ContactForm />
+    <Layout title="Services">
+      <PageHeader title="Services" />
     </Layout>
   );
 };
 
-export default Contact;
+export default Services;

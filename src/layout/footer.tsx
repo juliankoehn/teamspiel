@@ -23,6 +23,16 @@ export const Footer: React.FC = memo(() => {
               </li>
             </ul>
           </span>
+          <div className="flex flex-row space-x-2">
+            <Link href="/imprint">
+              <a
+                className="text-accents-500 no-underline text-sm transition-all inline-block hover:text-white"
+                title="Our GitHub"
+              >
+                Imprint
+              </a>
+            </Link>
+          </div>
         </div>
       </div>
     </footer>
