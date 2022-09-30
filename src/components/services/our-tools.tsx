@@ -6,41 +6,41 @@ const tools = [
     name: 'Next.js',
     description: 'The React Framework for Production',
     url: 'https://nextjs.org/',
-    logo: '/images/nextjs.svg',
+    logo: '/images/tools/nextjs.svg',
   },
   {
     name: 'React',
     description: 'A JavaScript library for building user interfaces',
     url: 'https://reactjs.org/',
-    logo: '/images/react.svg',
+    logo: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K',
   },
   {
     name: 'Tailwind CSS',
     description:
       'A utility-first CSS framework for rapidly building custom designs.',
     url: 'https://tailwindcss.com/',
-    logo: '/images/tailwindcss.svg',
+    logo: '/images/tools/tailwindcss.svg',
   },
   {
     name: 'TypeScript',
     description:
       'TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.',
     url: 'https://www.typescriptlang.org/',
-    logo: '/images/typescript.svg',
+    logo: '/images/tools/typescript.svg',
   },
   {
     name: 'Vercel',
     description:
       'Vercel is a cloud platform for static sites and Serverless Functions.',
     url: 'https://vercel.com/',
-    logo: '/images/vercel.svg',
+    logo: '/images/tools/vercel-icon-light.svg',
   },
   {
     name: 'GraphQL',
     description:
       'GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data.',
     url: 'https://graphql.org/',
-    logo: '/images/graphql.svg',
+    logo: '/images/tools/graphql.svg',
   },
   {
     name: 'Apollo',
@@ -193,7 +193,7 @@ export const OurTools: React.FC = memo(() => {
           {tools.map((tool) => (
             <div key={tool.name} className="col-span-12 md:col-span-4">
               <div className="flex flex-col items-center">
-                <div className="w-24 h-24 rounded-full bg-white flex items-center justify-center">
+                <div className="w-24 h-24 rounded-full bg-transparent text-white flex items-center justify-center">
                   <img src={tool.logo} alt={tool.name} />
                 </div>
                 <h4 className="font-semibold text-2xl text-white mt-4">

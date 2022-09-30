@@ -5,7 +5,11 @@ module.exports = {
     extend: {
       colors: {
         black: '#0c0800',
-        primary: '#ff0000',
+        // bright yellow
+        brightyellow: '#f9d71c',
+        // bright red
+        brightred: '#ff0000',
+        primary: '#f9d71c',
         accents: {
           100: '#111111',
           200: '#333333',
