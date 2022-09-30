@@ -36,8 +36,7 @@ const Imprint: NextPage = () => {
                 Julian K&ouml;hn, CEO <br />
               </p>
               <p>
-                Registered at Amtsgericht Charlottenburg Berlin, HRB 158855 B{' '}
-                <br />
+                Registered at Amtsgericht Kiel, HRB 158855 B <br />
                 Value Added Tax-ID: DE 354852154 <br />
                 Tax Number: 20/298/56313 <br />
               </p>
